@@ -162,11 +162,29 @@
             transition: var(--transition);
         }
         
+        .nav-item {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-item:hover::before {
+            left: 0;
+        }
+        
         .nav-item:hover {
-            background: rgba(0, 212, 255, 0.1);
-            border-color: var(--accent-primary);
             color: var(--accent-primary);
-            box-shadow: 0 0 20px var(--glow);
+            background: rgba(0, 212, 255, 0.05);
         }
         
         /* Hero Section */
@@ -205,6 +223,25 @@
             color: var(--text-secondary);
             margin-bottom: 2rem;
             font-weight: 300;
+            font-family: var(--font-mono);
+        }
+        
+        /* Typing Animation */
+        .typing-text {
+            border-right: 2px solid var(--accent-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(50, end), blink-caret 1s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: var(--accent-primary); }
         }
         
         .hero-subtitle {
@@ -788,7 +825,7 @@
         <div class="hero-content fade-in">
             <div class="hero-greeting">Hello! 👋</div>
             <h1 class="hero-name">I'm Sathvika</h1>
-            <h2 class="hero-title">Data Scientist</h2>
+            <h2 class="hero-title typing-text">Data Scientist & AI Engineer</h2>
             <p class="hero-subtitle">An Undergrad Student passionate about AI & Machine Learning</p>
             <div class="hero-links">
                 <a href="https://www.linkedin.com/in/abhi-sathvika-goriparthy-088513280/" class="btn btn-primary" target="_blank">
