@@ -246,7 +246,7 @@
         .hero-links {
             display: flex;
             gap: 1rem;
-            justify-content: center;
+            justify-content: flex-start;
         }
         
         .btn {
@@ -256,7 +256,7 @@
             font-weight: 600;
             transition: var(--transition);
             display: inline-flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 0.5rem;
         }
         
@@ -352,7 +352,7 @@
         
         /* Skills Section */
         .skills h2 {
-            text-align: center;
+            text-align: left;
             font-size: 3rem;
             margin-bottom: 4rem;
             background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
@@ -402,13 +402,12 @@
             flex-wrap: wrap;
             gap: 0.75rem;
         }
-
-      {/*             background: rgba(0, 212, 255, 0.1);
-            border: 1px solid rgba(0, 212, 255, 0.2);
-            border-radius: 50px */}
-      
+        
         .skill-item {
             padding: 0.5rem 1rem;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 50px;
             color: var(--text-secondary);
             font-size: 0.875rem;
             transition: var(--transition);
@@ -970,13 +969,13 @@
             <div class="about-grid">
                 <div class="about-text slide-in-left">
                     <h2>About Me</h2>
-                    <p>Hi! I'm Abhi Sathvika Goriparthy. I am an undergraduate student at the University of California, San Diego, majoring in Data Science with a concentration in AI and ML. With a strong foundation in data analysis, machine learning, and software engineering, I am passionate about applying AI/ML techniques to real-world problems.</p>
+                    <p>Hi! I'm Abhi Sathvika Goriparthy. I am an undergraduate student at the University of California, San Diego, majoring in Data Science with a concentration in AI and ML. With a strong foundation in data analysis, machine learning, and predictive modeling, I am passionate about applying data science techniques to real-world problems.</p>
                     <p><strong>Education:</strong> Bachelor of Science in Data Science at UC San Diego with concentration in AI/ML</p>
                     <p><strong>Graduation:</strong> June 2027</p>
                 </div>
                 <div class="about-stats slide-in-right">
                     <div class="stat-card glass">
-                        <span class="stat-number">7+</span>
+                        <span class="stat-number">3+</span>
                         <span class="stat-label">Projects Completed</span>
                     </div>
                     <div class="stat-card glass">
@@ -988,8 +987,8 @@
                         <span class="stat-label">Awards Won</span>
                     </div>
                     <div class="stat-card glass">
-                        <span class="stat-number">120+</span>
-                        <span class="stat-label">Newsletter Subscribers</span>
+                        <span class="stat-number">2024</span>
+                        <span class="stat-label">Started Journey</span>
                     </div>
                 </div>
             </div>
@@ -1004,10 +1003,21 @@
                             <span class="skill-item">Data Structures & Algorithms (TA)</span>
                             <span class="skill-item">Principles of Data Science</span>
                             <span class="skill-item">Machine Learning</span>
-                            <span class="skill-item">Mathematical Theory in ML(Empirical Risk Minimization, Optimization)</span>
-                            <span class="skill-item">Statistics (A/B Testing)</span>
-                            <span class="skill-item">Database Management (SQL)</span>
-                            <span class="skill-item">Systems for Scalable Analytics (Hadoop, Spark, Dask)</span>
+                            <span class="skill-item">Mathematical Theory in ML</span>
+                            <span class="skill-item">Statistics</span>
+                            <span class="skill-item">Database Management</span>
+                            <span class="skill-item">Systems for Scalable Analytics</span>
+                        </div>
+                    </div>
+                    <div class="coursework-card glass" style="padding: 2rem; text-align: center;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 1rem;">AI/ML Focus</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+                            <span class="skill-item">Empirical Risk Minimization</span>
+                            <span class="skill-item">Optimization</span>
+                            <span class="skill-item">Regression/Classification</span>
+                            <span class="skill-item">A/B Testing</span>
+                            <span class="skill-item">MapReduce/Hadoop</span>
+                            <span class="skill-item">Apache Spark, Dask</span>
                         </div>
                     </div>
                 </div>
